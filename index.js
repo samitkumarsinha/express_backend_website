@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
+var cors = require('cors')
+app.use(cors());
 const profiles = 
 [
     {
