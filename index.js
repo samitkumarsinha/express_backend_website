@@ -6,7 +6,8 @@ var cors = require('cors');
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', api)
+app.use('/api/uploads',express.static('uploads'))
+app.use('/api', api);
 app.listen(port, () => {
     console.log(`Server running at port ${port}`);
 })
