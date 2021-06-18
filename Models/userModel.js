@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-var uri = "mongodb+srv://samdb:unicorn1@cluster0.idow2.mongodb.net/school";
+var uri = "xxxx";
 
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false });
 module.exports = {
