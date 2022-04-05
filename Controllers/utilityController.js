@@ -4,6 +4,7 @@ module.exports = {
         countrymodel.countries().find({}, function (err, result) {
             if (!err) {
                 if(result){
+                    console.log(',,',req.session)
                     res.status(200).json(result);
                 }else{
                     res.status(404).json({status: 'Not Found'})
